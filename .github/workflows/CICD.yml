@@ -7,9 +7,9 @@ jobs:
       - name: Connexion SSH avec le serveur
         uses: appleboy/ssh-action@master
         with:
-          host: "ssh-${{ Alaoui@750750750 }}.alwaysdata.net"
-          username: ${{ Alaoui@750750750 }}
-          password: ${{ Alaoui@750750750 }}
+          host: "ssh-${{ secrets.Alaoui@750750750 }}.alwaysdata.net"
+          username: ${{ secrets.Alaoui@750750750 }}
+          password: ${{ secrets.Alaoui@750750750 }}
           script: |
             cd $HOME/www/
   Copy:
@@ -19,9 +19,9 @@ jobs:
       - name: Connexion SSH avec le serveur
         uses: appleboy/ssh-action@master
         with:
-          host: "ssh-${{ Alaoui@750750750 }}.alwaysdata.net"
-          username: ${{ Alaoui@750750750 }}
-          password: ${{ Alaoui@750750750 }}
+          host: "ssh-${{ secrets.Alaoui@750750750 }}.alwaysdata.net"
+          username: ${{ secrets.Alaoui@750750750 }}
+          password: ${{ secrets.Alaoui@750750750 }}
           script: |
             last_directory=$(basename ${{ runner.workspace }})
             cd $HOME/
