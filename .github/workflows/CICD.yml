@@ -20,8 +20,8 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: "ssh-${{ secrets.USERNAME }}.alwaysdata.net"
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          username: ${{ Alaoui@750750750 }}
+          password: ${{ Alaoui@750750750 }}
           script: |
             last_directory=$(basename ${{ runner.workspace }})
             cd $HOME/
