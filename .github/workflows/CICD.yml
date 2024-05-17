@@ -10,6 +10,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Debug - List files
+      run: ls -la
+
     - name: Connexion SSH avec le serveur
       uses: appleboy/ssh-action@master
       with:
